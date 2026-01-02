@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gsmschermen uitbereiding — Prototyping Tools</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/flexboxes.css">
+    <link rel="stylesheet" href="assets/nav.css">
+    <link rel="stylesheet" href="assets/typography.css">
+    <style>
+        /* small page-specific tweaks to improve layout */
+        .page-header-row{ display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-top:0.5rem; margin-bottom:1rem; }
+        .page-header-row .title{ margin:0; }
+        .shrink { font-size: 0.92rem; }
+        .shrink .sketch-frame img { height: 260px; }
+        .shrink .sketch-label { font-size: 0.9rem; }
+        .shrink .sketches-gallery { gap: 1rem; }
+        .title { font-size: 2.5em; }
+        .info-box { font-size: 1.05rem; }
+    </style>
+</head>
+<body>
+    <main style="padding-top:90px;">
+        <div class="container shrink">
+            <header style="display:flex;justify-content:center;align-items:center;gap:1rem;margin-top:0.5rem;text-align:center;">
+                <div>
+                    <h1 class="title">Gsmschermen uitbereiding</h1>
+                    <p style="margin-top:0.25rem;color:rgba(255,255,255,0.8)">Week 5</p>
+                </div>
+            </header>
+
+            <div class="info-box">
+                <p>
+                    Ik heb gewerkt aan de verdere uitbreiding van het ontwerp van de gsm-schermen.
+                    In dit proces heb ik per halte een gedetailleerde uitwerking gemaakt, met extra informatie en visuele elementen om de schermen overzichtelijk en gebruiksvriendelijk te maken.
+                </p>
+            </div>
+
+            <section class="sketches-gallery shrink" aria-label="Gsmschermen uitbreiding galerij">
+                <div class="sketch-frame">
+                    <a class="sketch-link" href="assets/images/Scherm­afbeelding 2025-12-13 om 15.49.29.png">
+                        <img src="assets/images/Scherm­afbeelding 2025-12-13 om 15.49.29.png" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Uitbreiding+1'" alt="Uitbreiding 1" />
+                    </a>
+                    <p class="sketch-label">Uitbreiding 1</p>
+                </div>
+
+                <div class="sketch-frame">
+                    <a class="sketch-link" href="assets/images/Scherm­afbeelding 2025-12-13 om 15.49.36.png">
+                        <img src="assets/images/Scherm­afbeelding 2025-12-13 om 15.49.36.png" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Uitbreiding+2'" alt="Uitbreiding 2" />
+                    </a>
+                    <p class="sketch-label">Uitbreiding 2</p>
+                </div>
+
+                <div class="sketch-frame">
+                    <a class="sketch-link" href="assets/images/Scherm­afbeelding 2025-12-13 om 15.50.34.png">
+                        <img src="assets/images/Scherm­afbeelding 2025-12-13 om 15.50.34.png" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Uitbreiding+3'" alt="Uitbreiding 3" />
+                    </a>
+                    <p class="sketch-label">Uitbreiding 3</p>
+                </div>
+            </section>
+
+            <!-- fixed bottom CTA naar Weken -->
+            <div class="bottom-cta" aria-hidden="false">
+                <a class="weeks-btn" href="2 index.html" aria-label="Ga naar Weken">Weken</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

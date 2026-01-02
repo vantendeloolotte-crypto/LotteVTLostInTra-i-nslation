@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opdracht Prototyping Tools — Contact</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/typography.css">
+  <style>
+  /* Page-specific enhancements: larger hero typography and dark color scheme (restored) */
+  body { background: linear-gradient(135deg, #0a0e27 0%, #1a1a3e 15%, #2d1b4e 30%, #3d0a4e 45%, #5d0a7f 60%, #3d4a8f 75%, #0a3a7f 90%, #0a0e27 100%); color:#fff; }
+  .container{ max-width:1100px; margin:0 auto; padding:28px 18px; }
+  .title{ font-size:2.2rem; font-weight:700; letter-spacing:0.6px; color:#fff; display:flex; align-items:center; gap:14px; }
+  .title .subtitle { font-size:0.95rem; color:rgba(255,255,255,0.85); font-weight:600; margin-top:6px; opacity:0.95; }
+
+  .hero-row{ display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+  .hero-left{ flex:1 1 480px; }
+  .hero-illustration{ width:120px; height:120px; flex:0 0 120px; border-radius:12px; background:linear-gradient(135deg,#667eea,#764ba2); display:flex; align-items:center; justify-content:center; box-shadow:0 8px 30px rgba(0,0,0,0.45); transform:translateY(0); transition:transform .45s cubic-bezier(.2,.9,.3,1); }
+  .hero-illustration:hover{ transform:translateY(-6px) rotate(-2deg) scale(1.03); }
+
+  h2{ font-size:1.4rem; font-weight:700; color:#fff; margin:0 0 10px; }
+  .info-box{ background: rgba(255,255,255,0.96); color:#111; padding:1rem 1.25rem; border-radius:12px; border:1px solid rgba(0,0,0,0.06); box-shadow:0 10px 30px rgba(0,0,0,0.45); }
+
+  .card{ transition:transform .28s ease, box-shadow .28s ease; }
+  .card:hover{ transform:translateY(-6px); box-shadow:0 18px 40px rgba(0,0,0,0.55); }
+
+  .page-nav-link{ background:transparent; color:#fff; border:1px solid rgba(255,255,255,0.08); padding:10px 14px; border-radius:8px; text-decoration:none; }
+  .page-nav-link:hover{ background:rgba(255,255,255,0.06); color:#fff; }
+
+  @keyframes fadeUp { from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:none;} }
+  .title, .hero-illustration, h2, .info-box { animation:fadeUp .6s ease both; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="hero-row">
+      <div class="hero-left">
+        <div class="title">
+          <div>
+            Opdracht Prototyping Tools
+            <div class="subtitle">Lost in Tra(i)nslation</div>
+          </div>
+        </div>
+
+        <div style="height:18px;"></div>
+        <h2>Informatie</h2>
+        <div class="info-box card">
+          <p>
+            In België doorkruisen treinen taalgrenzen. Een reiziger kan in Antwerpen (Nederlands
+            taalgebied) opstappen en reizen naar Luik (Franstalig gebied) of Eupen (Duitstalig
+            gebied). Tijdens deze reis vertrouwen passagiers op stationsschermen om correcte,
+            duidelijke en toegankelijke informatie te krijgen. Niet alle reizigers delen echter
+            dezelfde moedertaal, wat een uitdaging vormt voor communicatie en bruikbaarheid.
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-illustration" aria-hidden="true">
+        <!-- small inline SVG illustration (train icon simplified) -->
+        <svg width="72" height="72" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="1" y="6" width="22" height="10" rx="2" fill="#fff" opacity="0.92" />
+          <circle cx="7" cy="18" r="1.6" fill="#fff" />
+          <circle cx="17" cy="18" r="1.6" fill="#fff" />
+          <rect x="3.5" y="8.5" width="4" height="3" rx="0.5" fill="#0b3b66" opacity="0.95" />
+          <rect x="12.5" y="8.5" width="6" height="3" rx="0.5" fill="#0b3b66" opacity="0.95" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+   <!-- fixed bottom CTA naar Weken -->
+        <div class="bottom-cta" aria-hidden="false">
+            <a class="weeks-btn" href="2 index.html" aria-label="Ga naar Weken">Weken</a>
+        </div>
+
+        </div>
+</body>
+</html>
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digitaliseren — Prototyping Tools</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/flexboxes.css">
+    <link rel="stylesheet" href="assets/nav.css">
+    <link rel="stylesheet" href="assets/typography.css">
+      <style>
+        /* small page-specific tweaks to improve layout */
+        .page-header-row{ display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-top:0.5rem; margin-bottom:1rem; }
+        .page-header-row .title{ margin:0; }
+        /* Shrink most visual elements slightly while keeping the title and info-box at normal size */
+        .shrink { font-size: 0.92rem; }
+        .shrink .sketch-frame img { height: 260px; }
+        .shrink .sketch-label { font-size: 0.9rem; }
+        .shrink .sketches-gallery { gap: 1rem; }
+        /* Ensure title and info-box keep their regular appearance */
+        .title { font-size: 2.5em; }
+        .info-box { font-size: 1.05rem; }
+    </style>
+</head>
+<body>
+    <div class="container shrink">
+        <header style="display:flex;justify-content:space-between;align-items:center;margin-top:0.5rem;">
+            <div>
+                <h1 class="title">Digitaliseren</h1>
+                <p style="margin-top:0.25rem; color:rgba(255,255,255,0.8);">Week 2</p>
+            </div>
+        </header>
+        <div class="info-box">
+            <p>
+                 Nu ik ben begonnen met het digitaliseren van de schetsen, ik de ontwerpen nauwkeuriger uitwerken en verfijnen.
+                 In deze fase zet ik de handgemaakte schetsen om naar digitale versies, waarbij ik let op verhoudingen, typografie en details.
+        
+            </p>
+                </div>
+
+            <section class="gallery-column">
+                <section class="sketches-gallery" aria-label="Digitalisaties">
+                    <div class="sketch-frame">
+                        <a class="sketch-link" href="assets/images/Scherm­afbeelding 2025-11-25 om 21.42.32.png">
+                            <img src="assets/images/Scherm­afbeelding 2025-11-25 om 21.42.32.png" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Digitalisatie+1'" alt="Digitalisatie 1" />
+                        </a>
+                        <p class="sketch-label">Digitalisatie 1</p>
+                    </div>
+
+                    <div class="sketch-frame">
+                        <a class="sketch-link" href="assets/images/Scherm­afbeelding 2025-11-25 om 21.49.47.png">
+                            <img src="assets/images/Scherm­afbeelding 2025-11-25 om 21.49.47.png" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Digitalisatie+2'" alt="Digitalisatie 2" />
+                        </a>
+                        <p class="sketch-label">Digitalisatie 2</p>
+                    </div>
+
+                    <div class="sketch-frame">
+                        <a class="sketch-link" href="assets/images/Scherm­afbeelding 2025-11-26 om 12.50.24.png">
+                            <img src="assets/images/Scherm­afbeelding 2025-11-26 om 12.50.24.png" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Digitalisatie+3'" alt="Digitalisatie 3" />
+                        </a>
+                        <p class="sketch-label">Digitalisatie 3</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+
+    <!-- fixed bottom CTA naar Weken -->
+        <div class="bottom-cta" aria-hidden="false">
+            <a class="weeks-btn" href="2 index.html" aria-label="Ga naar Weken">Weken</a>
+        </div>
+
+        </div>
+</body>
+</html>

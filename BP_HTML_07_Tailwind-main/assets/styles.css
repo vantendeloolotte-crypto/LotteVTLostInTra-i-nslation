@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1a3e 15%, #2d1b4e 30%, #3d0a4e 45%, #5d0a7f 60%, #3d4a8f 75%, #0a3a7f 90%, #0a0e27 100%);
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Dosis', 'Open Sans', system-ui, -apple-system, sans-serif;
+    font-size: 18px;
+    height:auto;
+    min-height:100vh;
+}
+/* Container styling */
+.container {
+    font-family: 'Dosis', 'Open Sans', system-ui, -apple-system, sans-serif;
+    /* fixed max width for more consistent layout across viewports */
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.title {
+    font-family: 'Dosis', 'Open Sans', system-ui, -apple-system, sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 1.5rem;
+}
+
+/* small site header spacing helper */
+.site-header{ padding-top:0.6rem; padding-bottom:0.6rem; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.8em;
+    line-height: 1.3;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+a {
+    font-size: 1.1em;
+}
+
+/* Card grid and clickable cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin: 1.6em 0 1.4em 0;
+}
+
+/* Weeks grid: clickable week boxes on the homepage */
+.weeks-grid {
+    display: grid;
+    /* slightly smaller min width so week cards can sit side-by-side on narrower viewports */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0 1.5rem 0;
+}
+.week-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    color: #111;
+    text-decoration: none;
+    border-radius: 10px;
+    /* reduce padding so cards are more compact */
+    padding: 1rem 0.9rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    border: 1px solid rgba(0,0,0,0.06);
+    min-height: 110px;
+}
+.week-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(0,0,0,0.18);
+}
+.week-number{
+    font-weight: 700;
+    color: #222;
+    font-size: 1.4rem;
+}
+.week-label{
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.card {
+    display: block;
+    background: #fff;
+    color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+    text-decoration: none;
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.07);
+}
+.card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    transform: translateY(-4px) scale(1.03);
+}
+.card-content {
+    padding: 1.2em 1em;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Sketch gallery styling */
+.sketches-gallery {
+    display: grid;
+    /* smaller cards by default so more items fit horizontally */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.sketch-frame {
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 14px;
+    padding: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.11), inset 0 1px 2px rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+    position: relative;
+}
+
+.sketch-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%);
+    pointer-events: none;
+    border-radius: 14px;
+    z-index: 1;
+}
+
+.sketch-frame:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 16px 40px rgba(93, 10, 127, 0.18), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+    background: linear-gradient(135deg, #ffffff 0%, #fbfbfb 100%);
+}
+
+.sketch-frame img {
+    width: 100%;
+    /* reduced default height so frames are more compact */
+    height: 220px; /* fixed frame height for consistent layout */
+    object-fit: cover; /* crop & fill the frame while preserving aspect ratio */
+    display: block;
+    border-radius: 0;
+}
+
+/* make embedded videos behave like the image frames and fit nicely; slightly smaller than images by default */
+.sketch-frame video {
+    width: 100%;
+    height: 160px; /* reduced from 220 to 160 so videos look more compact */
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
+
+.sketch-label {
+    font-size: 0.95em;
+    color: #222222;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    padding: 0 0.75rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .sketches-gallery {
+        grid-template-columns: 1fr;
+    }
+    .sketch-frame img,
+    .sketch-frame video {
+        height: 120px; /* smaller on narrower screens so content stays compact */
+    }
+}
+
+/* Lightbox styles */
+.lightbox{ position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.75); z-index:1200; }
+.lightbox.hidden{ display:none; }
+.lightbox-inner{ max-width:90vw; max-height:90vh; position:relative; display:flex; flex-direction:column; align-items:center; }
+.lightbox-img{ max-width:100%; max-height:80vh; border-radius:6px; box-shadow:0 10px 30px rgba(0,0,0,0.6); }
+.lightbox-caption{ margin-top:0.6rem; color:#fff; text-align:center; }
+.lightbox-close{ position:absolute; top:-12px; right:-12px; background:#fff; color:#000; border-radius:50%; width:36px; height:36px; border:0; font-size:1.2rem; cursor:pointer; box-shadow:0 4px 12px rgba(0,0,0,0.3); }
+
+@media (max-width: 480px){
+    .lightbox-img{ max-height:70vh; }
+    .lightbox-close{ width:32px; height:32px; }
+}
+
+/* Contact info box */
+.info-box{
+    background: rgba(255,255,255,0.96);
+    color: #111;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    margin: 1rem 0 1.5rem 0;
+}
+.info-box p{ margin:0; line-height:1.6; }
+
+@media (max-width:768px){
+    .info-box{ padding: 0.85rem; }
+}

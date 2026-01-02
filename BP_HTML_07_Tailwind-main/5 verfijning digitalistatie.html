@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verfijning digitalisatie — Prototyping Tools</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/flexboxes.css">
+    <link rel="stylesheet" href="assets/nav.css">
+    <link rel="stylesheet" href="assets/typography.css">
+      <style>
+        /* small page-specific tweaks to improve layout */
+        .page-header-row{ display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-top:0.5rem; margin-bottom:1rem; }
+        .page-header-row .title{ margin:0; }
+        /* Shrink most visual elements slightly while keeping the title and info-box at normal size */
+        .shrink { font-size: 0.92rem; }
+        .shrink .sketch-frame img { height: 260px; }
+        .shrink .sketch-label { font-size: 0.9rem; }
+        .shrink .sketches-gallery { gap: 1rem; }
+        /* Ensure title and info-box keep their regular appearance */
+        .title { font-size: 2.5em; }
+        .info-box { font-size: 1.05rem; }
+    </style>
+</head>
+<body>
+  <div class="container shrink">
+        <header style="display:flex;justify-content:space-between;align-items:center;margin-top:0.5rem;">
+            <div>
+                <h1 class="title">Verfijning digitalisatie</h1>
+                <p style="margin-top:0.25rem;color:rgba(255,255,255,0.8)">Week 3</p>
+            </div>
+        </header>
+        
+
+        <div class="content-grid">
+            <aside class="meta-column">
+                <div class="info-box">
+                    <p>
+                        Ik heb de ontwerpen verder verfijnd en structuur aangebracht in de verschillende schermweergaven.
+                        Er is een kleurenpalet toegevoegd voor consistentie en verbeterde leesbaarheid.
+                        Deze fase richt zich op het uitwerken van details en het voorbereiden van de ontwerpen voor prototyping.
+                    </p>
+                </div>
+            </aside>
+
+            <section class="gallery-column">
+                <div class="sketches-gallery" aria-label="Verfijningen">
+                    <div class="sketch-frame">
+                        <a class="sketch-link" href="assets/images/Scherm­afbeelding 2025-12-02 om 15.02.22.png">
+                            <img src="assets/images/Scherm­afbeelding 2025-12-02 om 15.02.22.png" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Verfijning+1'" alt="Verfijning 1" />
+                        </a>
+                        <p class="sketch-label">Verfijning 1</p>
+                    </div>
+
+                    <div class="sketch-frame">
+                        <a class="sketch-link" href="assets/images/Scherm­afbeelding 2025-12-02 om 15.03.26.png">
+                            <img src="assets/images/Scherm­afbeelding 2025-12-02 om 15.03.26.png" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Verfijning+2'" alt="Verfijning 2" />
+                        </a>
+                        <p class="sketch-label">Verfijning 2</p>
+                    </div>
+
+                    <div class="sketch-frame">
+                        <a class="sketch-link" href="assets/images/Scherm­afbeelding 2025-12-02 om 15.03.34.png">
+                            <img src="assets/images/Scherm­afbeelding 2025-12-02 om 15.03.34.png" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Verfijning+3'" alt="Verfijning 3" />
+                        </a>
+                        <p class="sketch-label">Verfijning 3</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    <!-- fixed bottom CTA naar Weken -->
+        <div class="bottom-cta" aria-hidden="false">
+            <a class="weeks-btn" href="2 index.html" aria-label="Ga naar Weken">Weken</a>
+        </div>
+
+        </div>
+</body>
+</html>

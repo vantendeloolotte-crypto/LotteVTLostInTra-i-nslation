@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>extra schermen</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/flexboxes.css">
+    <link rel="stylesheet" href="assets/nav.css">
+    <link rel="stylesheet" href="assets/typography.css">
+    <style>
+        /* small page tweaks consistent with other pages */
+        .page-header-row{ display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-top:0.5rem; margin-bottom:1rem; }
+        .shrink { font-size: 0.92rem; }
+        .shrink .sketch-frame img { height: 260px; }
+        .shrink .sketch-label { font-size: 0.9rem; }
+        .title { font-size: 2.5em; }
+        .info-box { font-size: 1.05rem; }
+        /* left-align content similar to other pages but inside the centered container */
+        .left-align { display:block; text-align:left; }
+    </style>
+</head>
+<body>
+    <main style="padding-top:90px;">
+        <div class="container shrink left-align">
+                    <header style="display:flex;justify-content:flex-start;align-items:center;gap:1rem;margin-top:0.5rem;">
+                        <div>
+                            <h1 class="title">Extra schermen</h1>
+                            <p style="margin-top:0.25rem;color:rgba(255,255,255,0.8)">Week 6</p>
+                        </div>
+                    </header>
+
+            <div class="info-box">
+                <p>
+                    Daarnaast heb ik nog twee extra schermen uitgewerkt: een hoofdpagina en een ticketscherm. Het ticketscherm toont alle belangrijke informatie duidelijk en overzichtelijk, terwijl de hoofdpagina fungeert als centraal startpunt.
+                    Bij het ontwerpen heb ik gelet op consistentie, leesbaarheid en een logische structuur zodat ze aansluiten bij de rest van het ontwerp.
+                </p>
+            </div>
+
+            <section class="sketches-gallery shrink" aria-label="Extra schermen galerij">
+                <div class="sketch-frame">
+                    <a class="sketch-link" href="assets/images/Scherm­afbeelding 2025-12-13 om 15.54.29.png">
+                        <img src="assets/images/Scherm­afbeelding 2025-12-13 om 15.54.29.png" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Hoofdpagina'" alt="Hoofdpagina" />
+                    </a>
+                    <p class="sketch-label">Hoofdpagina</p>
+                </div>
+
+                <div class="sketch-frame">
+                    <a class="sketch-link" href="assets/images/Ticket.png">
+                        <img src="assets/images/Ticket.png" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Ticket'" alt="Ticket" />
+                    </a>
+                    <p class="sketch-label">Ticket</p>
+                </div>
+            </section>
+
+            <!-- fixed bottom CTA naar Weken -->
+            <div class="bottom-cta" aria-hidden="false">
+                <a class="weeks-btn" href="2 index.html" aria-label="Ga naar Weken">Weken</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive schermen — Prototyping Tools</title>
+        <link href="./dist/output.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/styles.css">
+        <link rel="stylesheet" href="assets/flexboxes.css">
+        <link rel="stylesheet" href="assets/nav.css">
+        <link rel="stylesheet" href="assets/typography.css">
+        <style>
+                /* small page-specific tweaks to improve layout */
+                .page-header-row{ display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-top:0.5rem; margin-bottom:1rem; }
+                .page-header-row .title{ margin:0; }
+                /* Shrink most visual elements slightly while keeping the title and info-box at normal size */
+                .shrink { font-size: 0.92rem; }
+                /* make shrink actually reduce the visual frame height below the site default */
+                .shrink .sketch-frame img { height: 150px; }
+                .shrink .sketch-frame video { height: 120px; }
+                .shrink .sketch-label { font-size: 0.9rem; }
+                .shrink .sketches-gallery { gap: 1rem; }
+                /* Ensure title and info-box keep their regular appearance */
+                .title { font-size: 2.5em; }
+                .info-box { font-size: 1.05rem; }
+        </style>
+        </head>
+<body>
+    <main style="padding-top:90px;">
+        <div class="container shrink left-align">
+                    <header style="display:flex;justify-content:flex-start;align-items:center;gap:1rem;margin-top:0.5rem;">
+                        <div>
+                            <h1 class="title">Interactive schermen</h1>
+                            <p style="margin-top:0.25rem;color:rgba(255,255,255,0.8)">Week 7</p>
+                        </div>
+                    </header>
+
+            <div class="info-box">
+                <p>
+                    Tot slot heb ik de schermen interactief gemaakt, zodat de werking en navigatie duidelijk ervaarbaar zijn.
+                    Door interactieve elementen toe te voegen, kan de gebruiker vlot door de schermen navigeren en de functionaliteiten beter begrijpen.
+                    Daarnaast heb ik ook een demonstratie voorzien waarin het ontwerp wordt getoond.
+                </p>
+            </div>
+
+            <section class="sketches-gallery shrink" aria-label="Extra schermen galerij">
+                <div class="sketch-frame">
+                    <a class="sketch-link" href="assets/images/interactief.png">
+                        <img src="assets/images/interactief.png" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Interactive+schemren'" alt="Interactive schermen" />
+                    </a>
+                    <p class="sketch-label">Interactive schermen</p>
+                </div>
+
+                <!-- Video demo: place your video file at assets/videos/interactive.mp4 -->
+                <div class="sketch-frame">
+                    <video controls preload="metadata" poster="assets/images/train-poster.svg" style="width:100%;display:block;border-radius:0;">
+                        <source src="assets/videos/demonstratievideo.mp4" type="video/mp4">
+                        <source src="assets/videos/demonstratievideo.webm" type="video/webm">
+                        Uw browser ondersteunt de video-tag niet. <a href="assets/videos/demonstratievideo.mp4">Download de video</a>.
+                    </video>
+                    <p class="sketch-label">Demonstratie video</p>
+                </div>
+            </section>
+
+        <!-- fixed bottom CTA naar Weken -->
+            <div class="bottom-cta" aria-hidden="false">
+                <a class="weeks-btn" href="2 index.html" aria-label="Ga naar Weken">Weken</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

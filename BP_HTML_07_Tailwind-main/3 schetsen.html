@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schetsen — Prototyping Tools</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/flexboxes.css">
+    <link rel="stylesheet" href="assets/nav.css">
+    <link rel="stylesheet" href="assets/typography.css">
+    <style>
+        /* small page-specific tweaks to improve layout */
+        .page-header-row{ display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-top:0.5rem; margin-bottom:1rem; }
+        .page-header-row .title{ margin:0; }
+        /* Shrink most visual elements slightly while keeping the title and info-box at normal size */
+        .shrink { font-size: 0.92rem; }
+        .shrink .sketch-frame img { height: 260px; }
+        .shrink .sketch-label { font-size: 0.9rem; }
+        .shrink .sketches-gallery { gap: 1rem; }
+        /* Ensure title and info-box keep their regular appearance */
+        .title { font-size: 2.5em; }
+        .info-box { font-size: 1.05rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header-row">
+            <div>
+                <h1 class="title">Schetsen</h1>
+                <p style="margin-top:0.25rem; color:rgba(255,255,255,0.8);">Week 1</p>
+            </div>
+        </div>
+        <div class="info-box">
+            <p>
+                In week 1 ben ik begonnen met het schetsen van de treinborden. Tijdens deze eerste fase heb ik verschillende
+                ideeën verkend en de basisvormen en indeling van de borden uitgewerkt. Dit schetsproces hielp mij om een duidelijk
+                beeld te krijgen van het ontwerp en vormde een belangrijke basis voor het verdere verloop van het project.
+            </p>
+        </div>
+
+        <section class="sketches-gallery shrink" aria-label="Galerij met schetsen">
+            <div class="sketch-frame">
+                <a class="sketch-link" href="assets/images/Unknown-17.jpg">
+                    <img src="assets/images/Unknown-17.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Schets+1'" alt="Wireframe schets 1" />
+                </a>
+                <p class="sketch-label">Schets 1</p>
+            </div>
+
+            <div class="sketch-frame">
+                <a class="sketch-link" href="assets/images/Unknown-21.jpg">
+                    <img src="assets/images/Unknown-21.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Schets+2'" alt="Wireframe schets 2" />
+                </a>
+                <p class="sketch-label">Schets 2</p>
+            </div>
+
+            <div class="sketch-frame">
+                <a class="sketch-link" href="assets/images/Unknown-22.jpg">
+                    <img src="assets/images/Unknown-22.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Schets+3'" alt="Wireframe schets 3" />
+                </a>
+                <p class="sketch-label">Schets 3</p>
+            </div>
+
+            <div class="sketch-frame">
+                <a class="sketch-link" href="assets/images/Unknown-23.jpg">
+                    <img src="assets/images/Unknown-23.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Schets+4'" alt="Wireframe schets 4" />
+                </a>
+                <p class="sketch-label">Schets 4</p>
+            </div>
+
+            <div class="sketch-frame">
+                <a class="sketch-link" href="assets/images/Unknown-24.jpg">
+                    <img src="assets/images/Unknown-24.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Schets+5'" alt="Wireframe schets 5" />
+                </a>
+                <p class="sketch-label">Schets 5</p>
+            </div>
+
+            <div class="sketch-frame">
+                <a class="sketch-link" href="assets/images/Unknown-25.jpg">
+                    <img src="assets/images/Unknown-25.jpg" onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800?text=Schets+6'" alt="Wireframe schets 6" />
+                </a>
+                <p class="sketch-label">Schets 6</p>
+            </div>
+    </section>
+
+    <!-- fixed bottom CTA naar Weken -->
+        <div class="bottom-cta" aria-hidden="false">
+            <a class="weeks-btn" href="2 index.html" aria-label="Ga naar Weken">Weken</a>
+        </div>
+
+        </div>
+</body>
+</html>
